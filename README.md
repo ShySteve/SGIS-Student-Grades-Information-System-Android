@@ -1,3 +1,5 @@
+please if any problem arises regarding this repo and it's contents. please contact my email, shysteve1314@gmail.com . Thank you.
+
 # SGIS - Android Port
 
 This project serves as a visual guide on how our project for the subject Information Communication Technology (ICT) Java Programming would look like. This project is purely made from AI, even the original Windows java version we had, as we're still not capable of making an actual app. This project is for educational purposes only and I don't intend this to advertise AI nor this project. We're just using this purely for visual guide, and also for me to actually install this apk-.
