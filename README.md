@@ -6,4 +6,6 @@ This project serves as a visual guide on how our project for the subject Informa
 
 I'd like to thank Claude AI for actually helping make this apk, it was tiresome to encode the features needed but thankfully he's very smart. I'd also like to thank the creators and developers of the Claude AI, Y'all made a very good AI \o/
 
+I'd want to also like my group mates and their help with giving me ideas to input for this app using Claude \o/. I thank them for their help, effort and collaboration.
+
 Idk what else to say other than those, might update this. Also made an effort to write all of these cause the repo needed to be public for me to upload the files to here cause I don't have a computer and laptop. Anyways if you accidentally stumbled on this repo by accident. Um, Hello I guess o/
