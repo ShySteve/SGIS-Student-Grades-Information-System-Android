@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create an Account"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/brand_primary"
+            android:layout_marginBottom="24dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sign up as:" />
+        <Spinner
+            android:id="@+id/roleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Name is split into separate fields (rather than one free-text field) so people can be
+             alphabetized by Surname, e.g. in the Teacher's student dropdown. -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Surname:" />
+        <EditText
+            android:id="@+id/surnameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. Dela Cruz"
+            android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="First Name:" />
+        <EditText
+            android:id="@+id/firstNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. Juan"
+            android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Middle Name / Middle Initial (optional):" />
+        <EditText
+            android:id="@+id/middleNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Leave blank if none"
+            android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Suffix (optional):" />
+        <EditText
+            android:id="@+id/suffixField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. Jr., III - leave blank if none"
+            android:layout_marginBottom="12dp" />
+
+        <TextView android:id="@+id/idLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="LRN:" />
+        <EditText
+            android:id="@+id/idField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Student: Grade Level / Section they belong to.
+             Teacher: their Advisory Grade Level / Section (optional - a Teacher doesn't have to be an adviser). -->
+        <TextView android:id="@+id/gradeLevelLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Grade Level:" />
+        <Spinner
+            android:id="@+id/gradeLevelSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <TextView android:id="@+id/sectionLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Section:" />
+        <Spinner
+            android:id="@+id/sectionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Teacher-only: subject(s) assigned to them, chosen from what an Admin has created. -->
+        <TextView
+            android:id="@+id/subjectsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assigned Subject(s):" />
+        <Button
+            android:id="@+id/subjectsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:text="Select Subjects" />
+        <TextView
+            android:id="@+id/subjectsSelectedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:text="None selected yet"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Teacher-only: every Grade Level + Section they actually have a class in. -->
+        <TextView
+            android:id="@+id/teachingSectionsLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sections You Have Classes In:" />
+        <Button
+            android:id="@+id/teachingSectionsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:text="Select Sections" />
+        <TextView
+            android:id="@+id/teachingSectionsSelectedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:text="None selected yet"
+            android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Password:" />
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Confirm Password:" />
+        <EditText
+            android:id="@+id/confirmPasswordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/createAccountButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_marginTop="8dp"
+            android:text="Back to Log In" />
+
+    </LinearLayout>
+</ScrollView>
